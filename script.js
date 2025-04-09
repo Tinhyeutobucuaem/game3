@@ -1,31 +1,27 @@
+// script.js
 let currentPage = 1;
 
-// Các mật khẩu khác nhau cho mỗi trang
-// Thay đổi mật khẩu tại đây nếu bạn muốn thay đổi mật khẩu cho mỗi trang
+// Các mật khẩu cho từng trang
 const correctPassword = {
-  1: "sondinh12", // Mật khẩu cho trang 1
-  2: "sondinh23", // Mật khẩu cho trang 2
-  3: "sondinh34" // Mật khẩu cho trang 3
+  1: "sondinh12",
+  2: "sondinh23",
+  3: "sondinh34"
 };
 
-// Chuyển sang trang tiếp theo
+// Hàm chuyển trang
 function nextPage(page) {
-  // Ẩn tất cả các trang
   for (let i = 1; i <= 5; i++) {
     document.getElementById('page' + i).classList.add('hidden');
   }
-
-  // Hiện trang hiện tại
   document.getElementById('page' + page).classList.remove('hidden');
   currentPage = page;
 }
 
-// Kiểm tra mật khẩu
+// Hàm kiểm tra mật khẩu
 function checkPassword(stage) {
   let inputPassword = "";
   let errorMessage = "";
 
-  // Lấy mật khẩu người dùng nhập vào tùy theo trang
   if (stage === 1) {
     inputPassword = document.getElementById('password1').value;
     errorMessage = 'error-message1';
@@ -37,14 +33,12 @@ function checkPassword(stage) {
     errorMessage = 'error-message3';
   }
 
-  // Kiểm tra mật khẩu người dùng nhập
   if (inputPassword === correctPassword[stage]) {
-    nextPage(currentPage + 1); // Chuyển sang trang tiếp theo
+    nextPage(currentPage + 1);
   } else {
-    // Nếu mật khẩu sai, hiển thị thông báo lỗi
     document.getElementById(errorMessage).classList.remove('hidden');
   }
 }
 
-// Bắt đầu với trang đầu tiên
+// Mở đầu ở trang 1
 nextPage(1);
