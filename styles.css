@@ -1,3 +1,4 @@
+/* styles.css */
 body {
   font-family: Arial, sans-serif;
   text-align: center;
@@ -45,8 +46,10 @@ button:hover {
 #error-message1.hidden, #error-message2.hidden, #error-message3.hidden {
   display: none;
 }
+
+/* Ảnh bìa nền */
 #background-cover {
-  background-image: url(https://drive.google.com/file/d/16fjy7z4g08GBxLM1BDMX8x8iXD4evIJk/view?usp=sharing); /* ← chỉ bạn đổi link ảnh tại đây */
+  background-image: url('images/background.jpg'); /* bạn tự thay đổi ảnh này */
   background-size: cover;
   background-position: center;
   position: fixed;
@@ -54,7 +57,15 @@ button:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* đẩy xuống dưới các nội dung khác */
-  opacity: 0.3; /* chỉnh độ mờ để không làm rối nội dung */
+  z-index: -1;
+  opacity: 0.3;
 }
 
+/* Ảnh nhỏ trên các trang */
+.small-banner {
+  max-width: 200px;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
