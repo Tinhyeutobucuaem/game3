@@ -46,7 +46,7 @@ button:hover {
   display: none;
 }
 #background-cover {
-  background-image: url('link_anh_cua_ban.jpg'); /* ← chỉ bạn đổi link ảnh tại đây */
+  background-image: url(https://drive.google.com/file/d/16fjy7z4g08GBxLM1BDMX8x8iXD4evIJk/view?usp=sharing); /* ← chỉ bạn đổi link ảnh tại đây */
   background-size: cover;
   background-position: center;
   position: fixed;
