@@ -47,24 +47,10 @@ button:hover {
   display: none;
 }
 
-/* Ảnh bìa nền */
-#background-cover {
-  background-image: url('a-digital-illustration-of-a-glowing-pink_G52n0nSXR0u4kGS5P8CtQw_8ImVaLRvQvWw3bMfjOAtMw.jpeg'); /* bạn tự thay đổi ảnh này */
-  background-size: cover;
-  background-position: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  opacity: 0.3;
-}
-
 /* Ảnh nhỏ trên các trang */
 .small-banner {
-  max-width: 200px;
-  margin-bottom: 15px;
+  max-width: 600px;
+  margin-bottom: 600px;
   display: block;
   margin-left: auto;
   margin-right: auto;
